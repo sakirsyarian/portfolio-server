@@ -5,6 +5,6 @@ const Controller = require('../controllers');
 const testimonialRouter = require('./testimonialRoute');
 
 router.get('/', Controller.home);
-router.use('/testimonials', testimonialRouter);
+router.use(testimonialRouter);
 
 module.exports = router;

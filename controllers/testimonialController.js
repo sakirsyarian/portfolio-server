@@ -3,17 +3,21 @@ const Testimonial = require('../models/testimonial');
 class TestimonialController {
     static async find(req, res) {
         try {
-            // const createTestimonial = new Testimonial({
-            //     image: 'images.com',
-            //     name: 'Sarian',
-            //     role: 'CEO Elgoritme',
-            //     message: 'A really good job, all aspects of the project were followed steb by step and with good result.',
-            // });
-            // const testimonial = await createTestimonial.save();
+            const testimonials = await Testimonial.find();
+            res.status(200).json({ success: true, data: testimonials });
+        } catch (error) {
+            console.log(error);
+        }
+    }
 
-            const testimonial = await Testimonial.find();
+    static async save(req, res) {
+        try {
+            const { image, name, role, message } = req.body;
 
-            res.status(200).json({ success: true, data: testimonial });
+            const createTestimonial = new Testimonial({ image, name, role, message });
+            const testimonial = await createTestimonial.save();
+
+            res.status(201).json({ success: true, data: testimonial });
         } catch (error) {
             console.log(error);
         }

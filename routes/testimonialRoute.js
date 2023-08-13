@@ -3,6 +3,7 @@ const router = express.Router();
 
 const TestimonialController = require('../controllers/testimonialController');
 
-router.get('/', TestimonialController.find);
+router.get('/testimonials', TestimonialController.find);
+router.post('/testimonials', TestimonialController.save);
 
 module.exports = router;
