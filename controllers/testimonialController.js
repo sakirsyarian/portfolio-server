@@ -22,6 +22,17 @@ class TestimonialController {
             console.log(error);
         }
     }
+
+    static async findByIdAndDelete(req, res) {
+        try {
+            const { id } = req.params;
+            const testimonial = await Testimonial.findByIdAndDelete(id);
+
+            res.status(200).json({ success: true, data: testimonial });
+        } catch (error) {
+            console.log(error);
+        }
+    }
 }
 
 module.exports = TestimonialController;
