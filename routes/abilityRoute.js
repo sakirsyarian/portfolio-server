@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const AbilityController = require('../controllers/AbilityController');
+const AbilityController = require('../controllers/abilityController');
 
 router.get('/abilities', AbilityController.find);
 router.post('/abilities', AbilityController.save);

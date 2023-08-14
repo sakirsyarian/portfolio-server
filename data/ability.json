@@ -1,0 +1,22 @@
+[
+    {
+        "icon": "javascript.png",
+        "name": "JavaScript",
+        "category": "frontend"
+    },
+    {
+        "icon": "react.png",
+        "name": "React",
+        "category": "frontend"
+    },
+    {
+        "icon": "vue.png",
+        "name": "Vue",
+        "category": "frontend"
+    },
+    {
+        "icon": "tailwind.png",
+        "name": "TailwindCSS",
+        "category": "frontend"
+    }
+]
