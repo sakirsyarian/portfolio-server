@@ -6,7 +6,7 @@ class ProjectController {
             const projects = await Project.find();
             res.status(200).json({ success: true, data: projects });
         } catch (error) {
-            console.log(error);
+            res.status(500).json({ success: false, error });
         }
     }
 
@@ -19,7 +19,7 @@ class ProjectController {
 
             res.status(201).json({ success: true, data: project });
         } catch (error) {
-            console.log(error);
+            res.status(500).json({ success: false, error });
         }
     }
 
@@ -30,7 +30,7 @@ class ProjectController {
 
             res.status(200).json({ success: true, data: project });
         } catch (error) {
-            console.log(error);
+            res.status(500).json({ success: false, error });
         }
     }
 }

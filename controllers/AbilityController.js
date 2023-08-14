@@ -6,7 +6,7 @@ class AbilityController {
             const abilities = await Ability.find();
             res.status(200).json({ success: true, data: abilities });
         } catch (error) {
-            console.log(error);
+            res.status(500).json({ success: false, error });
         }
     }
 
@@ -19,7 +19,7 @@ class AbilityController {
 
             res.status(201).json({ success: true, data: ability });
         } catch (error) {
-            console.log(error);
+            res.status(500).json({ success: false, error });
         }
     }
 
@@ -30,7 +30,7 @@ class AbilityController {
 
             res.status(200).json({ success: true, data: ability });
         } catch (error) {
-            console.log(error);
+            res.status(500).json({ success: false, error });
         }
     }
 }

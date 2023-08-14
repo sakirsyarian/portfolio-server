@@ -6,7 +6,7 @@ class TestimonialController {
             const testimonials = await Testimonial.find();
             res.status(200).json({ success: true, data: testimonials });
         } catch (error) {
-            console.log(error);
+            res.status(500).json({ success: false, error });
         }
     }
 
@@ -19,7 +19,7 @@ class TestimonialController {
 
             res.status(201).json({ success: true, data: testimonial });
         } catch (error) {
-            console.log(error);
+            res.status(500).json({ success: false, error });
         }
     }
 
@@ -30,7 +30,7 @@ class TestimonialController {
 
             res.status(200).json({ success: true, data: testimonial });
         } catch (error) {
-            console.log(error);
+            res.status(500).json({ success: false, error });
         }
     }
 }

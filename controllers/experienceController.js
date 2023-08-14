@@ -6,7 +6,7 @@ class ExperinceController {
             const experiences = await Experience.find();
             res.status(200).json({ success: true, data: experiences });
         } catch (error) {
-            console.log(error);
+            res.status(500).json({ success: false, error });
         }
     }
 
@@ -19,7 +19,7 @@ class ExperinceController {
 
             res.status(201).json({ success: true, data: experience });
         } catch (error) {
-            console.log(error);
+            res.status(500).json({ success: false, error });
         }
     }
 
@@ -30,7 +30,7 @@ class ExperinceController {
 
             res.status(200).json({ success: true, data: experience });
         } catch (error) {
-            console.log(error);
+            res.status(500).json({ success: false, error });
         }
     }
 }
