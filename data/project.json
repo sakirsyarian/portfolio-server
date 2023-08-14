@@ -1,0 +1,25 @@
+[
+    {
+        "image": "wingie.png",
+        "name": "Wingie",
+        "tags": [
+            "React",
+            "Express",
+            "PostgreSQL"
+        ],
+        "description": "A platform for comparing and finding affordable flights, as well as booking and purchasing tickets safely and easily in a few simple clicks.",
+        "github": "github.com/wingie"
+    },
+    {
+        "image": "fiskil.png",
+        "name": "Fiskil",
+        "tags": [
+            "Next.js",
+            "Express",
+            "PostgreSQL",
+            "Tailwind"
+        ],
+        "description": "A platform for accessing real-time open banking and energy data to help you grow your business, backed with scalable back-end infrastructure.",
+        "github": "github.com/fiskil"
+    }
+]
