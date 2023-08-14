@@ -12,14 +12,14 @@ class AbilityController {
 
     static async save(req, res) {
         try {
-            const { icon, name, category } = req.body;
+            const { icon, name, category, test } = req.body;
 
-            const createAbility = new Ability({ icon, name, category });
+            const createAbility = new Ability({ icon, name, category, test });
             const ability = await createAbility.save();
 
             res.status(201).json({ success: true, data: ability });
         } catch (error) {
-            res.status(500).json({ success: false, error });
+            res.status(400).json(error);
         }
     }
 
@@ -28,7 +28,7 @@ class AbilityController {
             const { id } = req.params;
             const ability = await Ability.findByIdAndDelete(id);
 
-            res.status(200).json({ success: true, data: ability });
+            res.status(200).json({ message: `${ability.name} deleted successfully` });
         } catch (error) {
             res.status(500).json({ success: false, error });
         }
