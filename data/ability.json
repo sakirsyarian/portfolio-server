@@ -18,5 +18,20 @@
         "icon": "tailwind.png",
         "name": "TailwindCSS",
         "category": "frontend"
+    },
+    {
+        "icon": "node.png",
+        "name": "NodeJS",
+        "category": "backend"
+    },
+    {
+        "icon": "express.png",
+        "name": "ExpressJS",
+        "category": "backend"
+    },
+    {
+        "icon": "postgres.png",
+        "name": "PostgreSQL",
+        "category": "backend"
     }
 ]

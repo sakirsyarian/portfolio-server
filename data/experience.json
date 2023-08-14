@@ -1,14 +1,39 @@
 [
     {
-        "company": "GreenApex",
-        "position": "Team Lead",
-        "date": "Jul 2017 - Oct 2021",
-        "description": "Brainstormed new ideas & gathered requirements for internal projects."
+        "company": "WebsiteOri",
+        "position": "Web Developer",
+        "date": "Jul 2021 - Nov 2022",
+        "description": [
+            "Create web based on client request such as company profile or landing page.",
+            "Creating websites for internal company needs such as web apps.",
+            "Website maintenance for both internal and external projects.",
+            "Collaborate with the team to ensure the web user interface meets the demand."
+        ]
     },
     {
-        "company": "Upwork",
-        "position": "Independent Freelancer",
-        "date": "Nov 2021 - Present",
-        "description": "Worked for various clients like Fiskil, Shosho, Crowe MacKay LLP."
+        "company": "Tolis Fresh",
+        "position": "Front-End Developer",
+        "date": "Aug 2022 - Feb 2023",
+        "description": [
+            "Drafting wireframing and visual layout concepts",
+            "Create and convert HTML & CSS visual layouts.",
+            "Evaluate and analyze source code.",
+            "Create features to improve the appearance and function of the website."
+        ]
+    },
+    {
+        "company": "Hacktiv8",
+        "position": "Full-Stack JavaScript Instructor",
+        "date": "Nov 2022 - Present",
+        "description": [
+            "Collecting. recording and reporting all necessary information related to students in a timely manner.",
+            "Monitors and assesses student progress on a regular basis.",
+            "Prepare class session and assignments to help student grasp course content.",
+            "Teaches courses in accordance with defined course standards and outcomes.",
+            "Create a learning environment that encourages student involvement and participation.",
+            "Documents students attendance and academic progress by giving and grading.",
+            "Submits course grades to the phase lead.",
+            "Is accessible to student outside the classroom. Providing ample periods of time for mentoring students."
+        ]
     }
 ]

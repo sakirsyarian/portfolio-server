@@ -4,7 +4,7 @@ const experienceSchema = new mongoose.Schema({
     company: String,
     position: String,
     date: String,
-    description: String,
+    description: [String],
 });
 
 const Experience = mongoose.model('Experience', experienceSchema);
