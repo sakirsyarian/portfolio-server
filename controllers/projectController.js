@@ -12,14 +12,14 @@ class ProjectController {
 
     static async save(req, res) {
         try {
-            const { image, name, tags, description, github } = req.body;
+            const { image, name, tags, description, github, test } = req.body;
 
-            const createProject = new Project({ image, name, tags, description, github });
+            const createProject = new Project({ image, name, tags, description, github, test });
             const project = await createProject.save();
 
             res.status(201).json({ success: true, data: project });
         } catch (error) {
-            res.status(500).json({ success: false, error });
+            res.status(400).json(error);
         }
     }
 
@@ -28,7 +28,7 @@ class ProjectController {
             const { id } = req.params;
             const project = await Project.findByIdAndDelete(id);
 
-            res.status(200).json({ success: true, data: project });
+            res.status(200).json({ message: `${project.name} deleted successfully` });
         } catch (error) {
             res.status(500).json({ success: false, error });
         }

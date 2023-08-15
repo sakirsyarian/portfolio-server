@@ -34,7 +34,7 @@ describe('POST /abilities', () => {
         const payload = {
             icon: 'test.png',
             name: 'test',
-            category: 'frontend',
+            category: 'test',
             test: true,
         };
         const response = await supertest(app).post('/abilities').send(payload);
@@ -65,8 +65,7 @@ describe('POST /abilities', () => {
 
 describe('DELETE /abilities/:id', () => {
     it('success response', async () => {
-        const ability = await supertest(app).get('/abilities');
-        const { _id, name } = ability.body.data[0];
+        const { _id, name } = await Ability.findOne({ test: true });
         const response = await supertest(app).delete(`/abilities/${_id}`);
 
         expect(response.status).toBe(200);
