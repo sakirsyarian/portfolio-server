@@ -3,7 +3,7 @@ const Ability = require('../models/ability');
 class AbilityController {
     static async find(req, res) {
         try {
-            const abilities = await Ability.find();
+            const abilities = await Ability.find().sort({ queue: 'asc' });
             res.status(200).json({ success: true, data: abilities });
         } catch (error) {
             res.status(500).json({ success: false, error });
