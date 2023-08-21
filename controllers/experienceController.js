@@ -12,14 +12,14 @@ class ExperinceController {
 
     static async save(req, res) {
         try {
-            const { company, position, date, description } = req.body;
+            const { company, position, date, description, test } = req.body;
 
-            const createExperience = new Experience({ company, position, date, description });
+            const createExperience = new Experience({ company, position, date, description, test });
             const experience = await createExperience.save();
 
             res.status(201).json({ success: true, data: experience });
         } catch (error) {
-            res.status(500).json({ success: false, error });
+            res.status(400).json(error);
         }
     }
 
@@ -28,7 +28,7 @@ class ExperinceController {
             const { id } = req.params;
             const experience = await Experience.findByIdAndDelete(id);
 
-            res.status(200).json({ success: true, data: experience });
+            res.status(200).json({ message: `${experience.company} deleted successfully` });
         } catch (error) {
             res.status(500).json({ success: false, error });
         }
