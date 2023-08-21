@@ -1,37 +1,74 @@
 [
     {
+        "queue": 1,
+        "icon": "tailwind.png",
+        "name": "TailwindCSS",
+        "category": "style"
+    },
+    {
+        "queue": 2,
         "icon": "javascript.png",
         "name": "JavaScript",
         "category": "frontend"
     },
     {
-        "icon": "react.png",
-        "name": "React",
-        "category": "frontend"
-    },
-    {
+        "queue": 3,
         "icon": "vue.png",
         "name": "Vue",
         "category": "frontend"
     },
     {
-        "icon": "tailwind.png",
-        "name": "TailwindCSS",
+        "queue": 4,
+        "icon": "react.png",
+        "name": "React",
         "category": "frontend"
     },
     {
+        "queue": 5,
+        "icon": "nextjs.png",
+        "name": "NextJS",
+        "category": "frontend"
+    },
+    {
+        "queue": 6,
         "icon": "node.png",
         "name": "NodeJS",
         "category": "backend"
     },
     {
+        "queue": 7,
         "icon": "express.png",
         "name": "ExpressJS",
         "category": "backend"
     },
     {
+        "queue": 8,
         "icon": "postgres.png",
         "name": "PostgreSQL",
-        "category": "backend"
+        "category": "database"
+    },
+    {
+        "queue": 9,
+        "icon": "sequelize.png",
+        "name": "Sequelize",
+        "category": "database"
+    },
+    {
+        "queue": 10,
+        "icon": "mongodb.png",
+        "name": "MongoDB",
+        "category": "database"
+    },
+    {
+        "queue": 11,
+        "icon": "mongoose.png",
+        "name": "Mongoose",
+        "category": "database"
+    },
+    {
+        "queue": 12,
+        "icon": "git.png",
+        "name": "Git",
+        "category": "tool"
     }
 ]
