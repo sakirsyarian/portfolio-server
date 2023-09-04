@@ -1,25 +1,26 @@
 [
     {
-        "image": "wingie.png",
-        "name": "Wingie",
+        "image": "tolis.png",
+        "name": "Tolis Fresh",
         "tags": [
-            "React",
             "Express",
+            "Ejs",
+            "Sequelize",
             "PostgreSQL"
         ],
-        "description": "A platform for comparing and finding affordable flights, as well as booking and purchasing tickets safely and easily in a few simple clicks.",
-        "github": "github.com/wingie"
+        "description": "This tolisfresh website project aims to create a service to offer various food raw materials. Starting from chicken, fruit, vegetables and groceries. Currently on this website there are several features that can be used.",
+        "github": "https://github.com/sakirsyarian/tolis-fresh"
     },
     {
-        "image": "fiskil.png",
-        "name": "Fiskil",
+        "image": "clothing.png",
+        "name": "Clothing Store",
         "tags": [
-            "Next.js",
-            "Express",
-            "PostgreSQL",
-            "Tailwind"
+            "Vue.js",
+            "Pinia",
+            "Vue Router",
+            "TailwindCSS"
         ],
-        "description": "A platform for accessing real-time open banking and energy data to help you grow your business, backed with scalable back-end infrastructure.",
-        "github": "github.com/fiskil"
+        "description": "This is a clothing store application built with Vue 3, Pinia, Vue Router and Vite. Clothing store is a simple e-commerce whose products are programmer t-shirts.",
+        "github": "https://github.com/sakirsyarian/clothing-client"
     }
 ]
