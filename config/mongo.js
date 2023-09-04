@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
 
+const MONGO = process.env.MONGO || 27017;
+
 try {
-    const URI = 'mongodb://127.0.0.1:27017/portfolio';
+    const URI = `mongodb://127.0.0.1:${MONGO}/portfolio`;
     mongoose.connect(URI, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
