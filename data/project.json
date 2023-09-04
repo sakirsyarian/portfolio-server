@@ -1,0 +1,26 @@
+[
+    {
+        "image": "tolis.png",
+        "name": "Tolis Fresh",
+        "tags": [
+            "Express",
+            "Ejs",
+            "Sequelize",
+            "PostgreSQL"
+        ],
+        "description": "This tolisfresh website project aims to create a service to offer various food raw materials. Starting from chicken, fruit, vegetables and groceries. Currently on this website there are several features that can be used.",
+        "github": "https://github.com/sakirsyarian/tolis-fresh"
+    },
+    {
+        "image": "clothing.png",
+        "name": "Clothing Store",
+        "tags": [
+            "Vue.js",
+            "Pinia",
+            "Vue Router",
+            "TailwindCSS"
+        ],
+        "description": "This is a clothing store application built with Vue 3, Pinia, Vue Router and Vite. Clothing store is a simple e-commerce whose products are programmer t-shirts.",
+        "github": "https://github.com/sakirsyarian/clothing-client"
+    }
+]
